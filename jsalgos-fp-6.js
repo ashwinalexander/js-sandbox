@@ -30,15 +30,15 @@ function remove(localBookList, bookName) {
 var newBookList = add(bookList, "A Brief History of Time");
 console.log("new");
 console.log(newBookList);
-// var newerBookList = remove(bookList, "On The Electrodynamics of Moving Bodies");
-// console.log("newer");
-// console.log(newerBookList);
-// var newestBookList = remove(
-//   add(bookList, "A Brief History of Time"),
-//   "On The Electrodynamics of Moving Bodies"
-// );
-// console.log("newest");
-// console.log(newestBookList);
+var newerBookList = remove(bookList, "On The Electrodynamics of Moving Bodies");
+console.log("newer");
+console.log(newerBookList);
+var newestBookList = remove(
+  add(bookList, "A Brief History of Time"),
+  "On The Electrodynamics of Moving Bodies"
+);
+console.log("newest");
+console.log(newestBookList);
 
 console.log("old");
 console.log(bookList);
