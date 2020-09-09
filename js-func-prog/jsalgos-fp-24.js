@@ -1,5 +1,9 @@
 function add(x) {
-  // Only change code below this line
-  // Only change code above this line
+  return function (y) {
+    return function (z) {
+      return x + y + z;
+    };
+  };
 }
-add(10)(20)(30);
+
+console.log(add(10)(20)(30));
