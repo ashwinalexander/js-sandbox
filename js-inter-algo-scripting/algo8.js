@@ -1,3 +1,6 @@
+//Intermediate Algorithm Scripting: DNA Pairing
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/dna-pairing
+
 function pairElement(str) {
   function returnPair(char) {
     switch (char) {
@@ -21,5 +24,3 @@ function pairElement(str) {
   let dnaStrands = str.split("").map(returnPair);
   return dnaStrands;
 }
-
-pairElement("ATCGA");
