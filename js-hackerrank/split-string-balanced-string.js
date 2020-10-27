@@ -1,28 +1,33 @@
+// https://leetcode.com/problems/split-a-string-in-balanced-strings/
+
 // Input: s = "RLRRLLRLRL"
 // Output: 4
 // Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
 
+let s = "RLRRLLRLRL";
 
+let balancedStringSplit = (s) => {
+	let arrString = [...s];
 
-let inputString = "RLRRLLRLRL";
-let arrayString = [...inputString];  //[R,L,R,R,L,L,R,L,R,L];
+	let rCounter = 0;
+	let lCounter = 0;
+	let counter = 0;
 
+	for (let i = 0; i < arrString.length; i++) {
+		if (arrString[i] === "L") {
+			lCounter = lCounter + 1;
+		}
 
+		if (arrString[i] === "R") {
+			rCounter = rCounter + 1;
+		}
 
-//counter which increments whenever "you wanted to split"
-counter = 0; 
-//indexcounter 
-indexCounter = 0;
+		if (rCounter == lCounter) {
+			counter++;
+		}
+	}
+	console.log(counter);
+	return counter;
+};
 
-for(let i = 0< i < arrayString.length; i++){
-    //count R
-    //count L
-
-    //if(condition is met){
-        counter = counter+ 1;
-    }
-
-
-}
-
-
+balancedStringSplit(s);
