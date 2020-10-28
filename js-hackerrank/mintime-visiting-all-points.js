@@ -48,7 +48,7 @@ let minTimeToVisitAllPoints = (points) => {
 		time += calcTime(points[i], points[i + 1]);
 	}
 
-	console.log(time);
+	return time;
 };
 
 minTimeToVisitAllPoints(points);
