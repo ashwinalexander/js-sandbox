@@ -13,7 +13,7 @@
 
 let ops = ["5", "2", "C", "D", "+"];
 
-var calPoints = function (ops) {
+let calPoints = function (ops) {
 	let record = [];
 
 	for (let i = 0; i < ops.length; i++) {
