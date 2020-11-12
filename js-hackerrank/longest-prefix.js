@@ -1,5 +1,4 @@
 // //https://leetcode.com/problems/longest-common-prefix/
-
 // Write a function to find the longest common prefix string amongst an array of strings.
 // If there is no common prefix, return an empty string "".
 // Example 1:
@@ -11,7 +10,7 @@ let longestCommonPrefix = function (strs) {
 	let newArr = strs.map((val) => [...val]);
 
 	//return an empty string if there's one or 0 inputs
-	if (newArr.length == 0) {
+	if (newArr.length === 0) {
 		return matchString;
 	}
 
@@ -19,13 +18,15 @@ let longestCommonPrefix = function (strs) {
 		return strs[0];
 	}
 
-	for (let i = 0; i < newArr[0].length; i++) {
+	for (let i = 0; i < newArr[2].length; i++) {
 		for (let j = 1; j < newArr.length; j++) {
-			if (newArr[j][i] != newArr[0][i]) {
+			if (newArr[j][i] === newArr[0][i]) {
+				//do nothing
+			} else {
 				return matchString;
 			}
 		}
-		matchString += newArr[0][i];
+		matchString = matchString + newArr[0][i];
 	}
 
 	return matchString;
