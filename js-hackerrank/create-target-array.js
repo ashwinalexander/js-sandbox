@@ -34,7 +34,6 @@ let createTargetArray = function (nums, index) {
 		outputArray.splice(index[i], 0, nums[i]);
 	}
 
-	console.log(outputArray);
 	return outputArray;
 };
 
