@@ -5,6 +5,12 @@
 // Input: strs = ["flower","flow","flight"]
 // Output: "fl"
 
+
+//logic = algorithm 
+//pseudocode
+//code 
+
+
 let longestCommonPrefix = function (strs) {
 	let matchString = "";
 	let newArr = strs.map((val) => [...val]);
@@ -20,9 +26,8 @@ let longestCommonPrefix = function (strs) {
 
 	for (let i = 0; i < newArr[2].length; i++) {
 		for (let j = 1; j < newArr.length; j++) {
-			if (newArr[j][i] === newArr[0][i]) {
-				//do nothing
-			} else {
+			if (newArr[j][i] !== newArr[0][i]) {
+		
 				return matchString;
 			}
 		}

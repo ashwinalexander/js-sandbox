@@ -16,7 +16,6 @@
 //else increment counter
 
 let heights = [1, 2, 3, 4, 5];
-//let heights = [1, 1, 4, 2, 1, 3];
 
 let heightChecker = function (heights) {
 	let originalArray = heights.map((val) => val);
@@ -29,7 +28,7 @@ let heightChecker = function (heights) {
 			counter = counter + 1;
 		}
 	}
-	console.log(counter);
+
 	return counter;
 };
 
