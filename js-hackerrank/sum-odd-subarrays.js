@@ -20,17 +20,14 @@
 let arr = [1, 4, 2, 5, 3];
 var sumOddLengthSubarrays = function (arr) {
 	let sum = 0;
-
 	for (let i = 1; i <= arr.length; i = i + 2) {
 		for (let j = 0; j < arr.length; j++) {
-			//arr.length - subarray.length
 			if (j <= arr.length - i) {
 				let temp = arr.slice(j, j + i);
 				sum += temp.reduce((val, acc) => acc + val);
 			}
 		}
 	}
-	console.log(sum);
 	return sum;
 };
 
