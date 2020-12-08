@@ -1,5 +1,9 @@
 let num = [1, 2, 3, 4, 5];
+let copy = [];
+for (let i = 0; i < num.length; i++) {
+	copy.push(num[i]); //by value
+}
 
-let blah = num.reduce((val, acc) => acc + val);
+num[0] = 400;
 
-console.log(blah);
+console.log(copy);
