@@ -1,9 +1,11 @@
-let num = [1, 2, 3, 4, 5];
-let copy = [];
-for (let i = 0; i < num.length; i++) {
-	copy.push(num[i]); //by value
+function passMake(make) {
+	return function (model) {
+		return make + " " + model;
+	};
 }
 
-num[0] = 400;
+let make = passMake("Ford");
 
-console.log(copy);
+let blah = make("Escape");
+
+console.log(blah);
