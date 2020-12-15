@@ -20,3 +20,14 @@ console.log(john);
 // console.log(jane);
 
 console.log(john.__proto__);
+
+String.prototype.getlen = function () {
+	return this.length;
+};
+
+Number.prototype.multi = function (tru) {
+	return 5 * tru;
+};
+
+var blah = new Number(3);
+console.log(blah);

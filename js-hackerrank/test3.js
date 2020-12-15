@@ -1,13 +1,5 @@
-let test = ["a", "v", "c", "d"];
+let blah = [1, 10, 20, 22];
 
-if (test.indexOf("adadadad") === -1) {
-	test.push("adadadad");
-}
+let outputArray = blah.filter((val) => val < 30);
 
-console.log(test.length);
-
-if (test.indexOf("adadadad") === -1) {
-	test.push("adadadad");
-}
-
-console.log(test.length);
+console.log(outputArray);
