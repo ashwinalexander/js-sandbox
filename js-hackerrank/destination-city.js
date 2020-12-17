@@ -19,6 +19,7 @@ let paths = [
 let destCity = function (paths) {
 	let sourceCities = paths.map((val) => val[0]);
 	let destinationCities = paths.map((val) => val[1]);
+
 	//option 1
 	for (let i = 0; i < destinationCities.length; i++) {
 		//ny, lima, sp

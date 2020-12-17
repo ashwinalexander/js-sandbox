@@ -1,5 +1,15 @@
-let blah = [1, 10, 20, 22];
+var vlah = ["first", "second", "third"];
 
-let outputArray = blah.filter((val) => val < 30);
+for (var prop in vlah) {
+	console.log(prop);
+}
 
-console.log(outputArray);
+var obj = {
+	1: "first",
+	2: "second",
+	3: "third",
+};
+
+for (var prop in obj) {
+	console.log(prop + ":" + obj[prop]);
+}
