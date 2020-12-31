@@ -17,7 +17,7 @@ let checkPerfectNumber = function (num) {
 		}
 	}
 
-	console.log(divisors);
+	
 	if (divisors.length === 0) {
 		return false;
 	}

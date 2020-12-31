@@ -18,8 +18,8 @@
 let heights = [1, 2, 3, 4, 5];
 
 let heightChecker = function (heights) {
-	let originalArray = heights.map((val) => val);
-	let sortedArray = heights.sort((a, b) => a - b);
+	let originalArray = heights.map((val) => val); //copy the original array 
+	let sortedArray = heights.sort((a, b) => a - b); //sorted 
 
 	let counter = 0;
 

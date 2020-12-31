@@ -1,15 +1,9 @@
-var vlah = ["first", "second", "third"];
+let asciiArray = [97, 98, 99];
 
-for (var prop in vlah) {
-	console.log(prop);
-}
-
-var obj = {
-	1: "first",
-	2: "second",
-	3: "third",
+let asciiConverter = function (asciiArray) {
+	return asciiArray
+		.map((val) => String.fromCharCode(val))
+		.reduce((finalResult, val) => finalResult + val);
 };
 
-for (var prop in obj) {
-	console.log(prop + ":" + obj[prop]);
-}
+console.log(asciiConverter(asciiArray));

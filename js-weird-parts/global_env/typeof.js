@@ -14,3 +14,8 @@ console.log(Object.prototype.toString.call(d));
 function Person(name) {
 	this.name = name;
 }
+
+console.log("----");
+var e = new Person("Jane");
+console.log(typeof e);
+console.log(e instanceof Person);

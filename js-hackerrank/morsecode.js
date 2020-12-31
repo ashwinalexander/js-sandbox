@@ -44,6 +44,7 @@ var uniqueMorseRepresentations = function (words) {
 	};
 
 	for (let i = 0; i < words.length; i++) {
+		// g,i,n
 		let tempArray = [...words[i]];
 		let concatenatedMorseWord = "";
 
